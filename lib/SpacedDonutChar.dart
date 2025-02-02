@@ -33,6 +33,12 @@ class SpacedDonutChartPainter extends CustomPainter {
       width: size.width - 60,
       height: size.height - 60,
     );
+    for (int i = 0; i < values.length; i++) {
+      final sweepAngle = (values[i] / total) * 2 * pi * (1 - gapSize);
+      paint.color = colors[i];
+      canvas.drawArc(rect, startAngle, sweepAngle, false, paint);
+      startAngle += sweepAngle + (2 * pi * gapSize / values.length);
+    }
   }
 
   @override
