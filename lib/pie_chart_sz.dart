@@ -25,7 +25,7 @@ class PieChartSz extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomPaint(
     size: Size(300, 300),
-    painter: SpacedDonutChartPainter(),
+    painter: SpacedDonutChartPainter(colors:this.colors!,values: this.values!),
     );
   }
 }
