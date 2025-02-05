@@ -10,11 +10,10 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
+# spaced Pie Chart
+![Cirrus CI - Base Branch Build Status](https://img.shields.io/cirrus/github/rezgar01m/pie_chart_sz) [![GitHub stars](https://img.shields.io/github/stars/rezgar01m/pie_chart.svg?style=social)](https://github.com/rezgar01m/pie_chart_sz) ![GitHub last commit](https://img.shields.io/github/last-commit/rezgar01m/pie_chart_sz.svg) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/rezgar01m/pie_chart_sz)
 
 This Flutter package provides a donut Chart Widget
-
-## Features
-## Features
 
 ## Installation
 In the `dependencies:` section of your `pubspec.yaml`, add the following line:
