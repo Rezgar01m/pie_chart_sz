@@ -4,8 +4,8 @@ import 'dart:math';
 class SpacedDonutChartPainter extends CustomPainter {
   List<Color> colors;
   List<double> values;
-
-  SpacedDonutChartPainter({required this.colors, required this.values});
+  String? centerText;
+  SpacedDonutChartPainter({required this.colors, required this.values,this.centerText});
 
   final double gapSize = 0.2;
 
@@ -35,6 +35,24 @@ class SpacedDonutChartPainter extends CustomPainter {
 
       startAngle += sweepAngle + (2 * pi * gapSize / values.length);
     }
+    final textPainter = TextPainter(
+      text: TextSpan(
+        text: centerText,
+        style: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+          color: Colors.black,
+        ),
+      ),
+      textDirection: TextDirection.ltr,
+      textAlign: TextAlign.center,
+    );
+    textPainter.layout(minWidth: 0, maxWidth: size.width);
+    final offset = Offset(
+      (size.width - textPainter.width) / 2,
+      (size.height - textPainter.height) / 2,
+    );
+    textPainter.paint(canvas, offset);
   }
 
   @override

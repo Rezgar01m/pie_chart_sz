@@ -19,7 +19,8 @@ class PieChartSz extends StatelessWidget {
     5,
     5,
   ];
-   PieChartSz({super.key,this.values,this.colors});
+  String? centerText;
+   PieChartSz({super.key,this.values,this.colors,this.centerText="center"});
 
   @override
   Widget build(BuildContext context) {
