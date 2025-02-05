@@ -30,7 +30,6 @@ import 'package:pie_chart/pie_chart.dart';
 ```
 #### this a simple exaple code to use this package
 ```dart
-
 List<Color>? colors = [
   Colors.purple,
   Colors.blue,
