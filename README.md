@@ -14,13 +14,11 @@ and the Flutter guide for
 This Flutter package provides a donut Chart Widget
 
 ## Features
+## Features
 
 ## Getting started
 
 ## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
 
 ```dart
 
