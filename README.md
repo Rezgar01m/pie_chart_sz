@@ -16,7 +16,10 @@ This Flutter package provides a donut Chart Widget
 ## Features
 ## Features
 
-## Getting started
+## Installation
+In the `dependencies:` section of your `pubspec.yaml`, add the following line:
+
+[![Version](https://img.shields.io/pub/v/pie_chart_sz.svg)](https://pub.dartlang.org/packages/pie_chart_sz)
 
 ## Usage
 

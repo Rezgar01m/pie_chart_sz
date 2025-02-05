@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:pie_chart_sz/pie_chart_sz.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Spaced chart example (zerxc)'),
     );
   }
 }
@@ -69,6 +69,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    List<Color>? colors = [
+      Colors.purple,
+      Colors.blue,
+      Colors.orange,
+      Colors.red,
+      Colors.teal,
+    ];
+
+    List<double>? values = [
+      50,
+      20,
+      20,
+      5,
+      5,
+    ];
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
@@ -104,11 +119,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+          PieChartSz(
+          colors: colors,
+          values: values,
+        )
           ],
         ),
       ),
