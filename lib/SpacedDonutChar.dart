@@ -5,10 +5,11 @@ class SpacedDonutChartPainter extends CustomPainter {
   List<Color> colors;
   List<double> values;
   String? centerText;
-  bool showValues=true;
-  SpacedDonutChartPainter({required this.colors, required this.values,this.centerText});
+  bool showValues;
+  double gapSize = 0.2;
+  SpacedDonutChartPainter({required this.colors, required this.values,this.centerText,required this.showValues,required this.gapSize});
 
-  final double gapSize = 0.2;
+
 
   @override
   void paint(Canvas canvas, Size size) {
