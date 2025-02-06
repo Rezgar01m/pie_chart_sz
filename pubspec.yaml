@@ -1,6 +1,6 @@
 name: pie_chart_sz
-description: "A Flutter package for creating beautiful Pie Charts"
-version: 0.0.2
+description: "A Flutter package for creating beautiful Spaced Pie Charts"
+version: 1.0.0
 homepage: https://github.com/rezgar01m/pie_chart_sz
 
 environment:

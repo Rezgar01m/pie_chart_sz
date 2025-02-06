@@ -1,7 +1,7 @@
 ## 1.0.0
 
 * feat: added value display
-* feat:added value Settings
+* feat: added value Settings
 * feat: added gap size
 * update README
 
