@@ -28,7 +28,9 @@ dependencies:
 ```dart
 import 'package:pie_chart/pie_chart.dart';
 ```
-#### this a simple exaple code to use this package
+#### this a simple example code to use this package
+<img src="https://raw.githubusercontent.com/rezgar01m/pie_chart_sz/master/res/s1.png"  height = "400" alt="PieChart">
+
 ```dart
 List<Color>? colors = [
   Colors.purple,

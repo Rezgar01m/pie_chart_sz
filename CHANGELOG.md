@@ -1,3 +1,6 @@
+## 1.0.0
+* feat: added value display
+* update README
 ## 0.0.2
-* feat:added center text
+* feat: added center text
 ## 0.0.1 - Initial Release
