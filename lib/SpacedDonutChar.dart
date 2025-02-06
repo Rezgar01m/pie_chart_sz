@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+import 'package:pie_chart_sz/ValueSettings.dart';
+
 class SpacedDonutChartPainter extends CustomPainter {
   List<Color> colors;
   List<double> values;
   String? centerText;
-  bool showValues;
+  Valuesettings valueSettings;
   double gapSize = 0.2;
-  SpacedDonutChartPainter({required this.colors, required this.values,this.centerText,required this.showValues,required this.gapSize});
+  SpacedDonutChartPainter({required this.colors, required this.values,this.centerText,required this.valueSettings,required this.gapSize});
 
 
 
@@ -37,7 +39,7 @@ class SpacedDonutChartPainter extends CustomPainter {
       double midAngle = startAngle + sweepAngle / 2;
 
 
-      if(showValues){
+      if(valueSettings.showValues){
       Offset lineStart = Offset(
         size.width / 2 + cos(midAngle) * (size.width / 2.5),
         size.height / 2 + sin(midAngle) * (size.height / 2.5),
