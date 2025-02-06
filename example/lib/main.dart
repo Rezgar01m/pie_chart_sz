@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pie_chart_sz/ValueSettings.dart';
 import 'package:pie_chart_sz/pie_chart_sz.dart';
 void main() {
   runApp(const MyApp());
@@ -122,6 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
           PieChartSz(
           colors: colors,
           values: values,
+            valueSettings: Valuesettings(showValues: false),
         )
           ],
         ),

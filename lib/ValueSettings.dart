@@ -1,5 +1,5 @@
 class Valuesettings {
-  bool showValues;
+ final bool showValues;
 
-  Valuesettings({required this.showValues});
+  const Valuesettings({required this.showValues});
 }
