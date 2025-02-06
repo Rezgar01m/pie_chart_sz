@@ -5,7 +5,7 @@ class SpacedDonutChartPainter extends CustomPainter {
   List<Color> colors;
   List<double> values;
   String? centerText;
-  bool showValues=false;
+  bool showValues=true;
   SpacedDonutChartPainter({required this.colors, required this.values,this.centerText});
 
   final double gapSize = 0.2;
@@ -38,8 +38,8 @@ class SpacedDonutChartPainter extends CustomPainter {
 
       if(showValues){
       Offset lineStart = Offset(
-        size.width / 2 + cos(midAngle) * (size.width / 3),
-        size.height / 2 + sin(midAngle) * (size.height / 3),
+        size.width / 2 + cos(midAngle) * (size.width / 2.5),
+        size.height / 2 + sin(midAngle) * (size.height / 2.5),
       );
       Offset lineEnd = Offset(
         size.width / 2 + cos(midAngle) * (size.width / 2),
