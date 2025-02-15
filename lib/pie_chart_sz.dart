@@ -13,7 +13,7 @@ class PieChartSz extends StatelessWidget {
     Colors.teal,
   ];
 
-  List<double>? values = [
+   List<double>? values = [
     50,
     20,
     20,

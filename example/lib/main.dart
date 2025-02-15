@@ -123,6 +123,8 @@ class _MyHomePageState extends State<MyHomePage> {
           PieChartSz(
           colors: colors,
           values: values,
+            gapSize: 0.2,
+            centerText: "rezgar",
             valueSettings: Valuesettings(showValues: false),
         )
           ],

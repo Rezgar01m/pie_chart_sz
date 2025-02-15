@@ -7,6 +7,7 @@ class SpacedDonutChartPainter extends CustomPainter {
   List<Color> colors;
   List<double> values;
   String? centerText;
+  TextStyle? textStyle;
   Valuesettings valueSettings;
   double gapSize = 0.2;
   SpacedDonutChartPainter({required this.colors, required this.values,this.centerText,required this.valueSettings,required this.gapSize});
