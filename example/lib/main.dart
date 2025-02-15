@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pie_chart_sz/ValueSettings.dart';
 import 'package:pie_chart_sz/pie_chart_sz.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -78,13 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
       Colors.teal,
     ];
 
-    List<double>? values = [
-      50,
-      20,
-      20,
-      5,
-      5,
-    ];
+    List<double>? values = [50, 20, 20, 5, 5];
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
@@ -120,13 +115,25 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-          PieChartSz(
-          colors: colors,
-          values: values,
-            gapSize: 0.2,
-            centerText: "rezgar",
-            valueSettings: Valuesettings(showValues: false),
-        )
+            PieChartSz(
+              colors: colors,
+              values: values,
+              gapSize: 0.2,
+              centerText: "rezgar",
+              centerTextStyle: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+              valueSettings: Valuesettings(
+                showValues: true,
+                ValueTextStyle: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+            ),
           ],
         ),
       ),
