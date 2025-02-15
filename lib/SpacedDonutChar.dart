@@ -7,10 +7,10 @@ class SpacedDonutChartPainter extends CustomPainter {
   List<Color> colors;
   List<double> values;
   String? centerText;
-  TextStyle? textStyle;
+  TextStyle? centerTextStyle;
   Valuesettings valueSettings;
   double gapSize = 0.2;
-  SpacedDonutChartPainter({required this.colors, required this.values,this.centerText,required this.valueSettings,required this.gapSize});
+  SpacedDonutChartPainter({required this.colors, required this.values,this.centerText,required this.valueSettings,required this.gapSize,required this.centerTextStyle});
 
 
 
@@ -87,11 +87,7 @@ class SpacedDonutChartPainter extends CustomPainter {
     final textPainter = TextPainter(
       text: TextSpan(
         text: centerText,
-        style: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-          color: Colors.black,
-        ),
+        style: centerTextStyle,
       ),
       textDirection: TextDirection.ltr,
       textAlign: TextAlign.center,

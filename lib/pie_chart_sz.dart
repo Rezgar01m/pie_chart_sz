@@ -13,7 +13,7 @@ class PieChartSz extends StatelessWidget {
     Colors.teal,
   ];
 
-   List<double>? values = [
+  List<double>? values = [
     50,
     20,
     20,
@@ -23,12 +23,18 @@ class PieChartSz extends StatelessWidget {
   String? centerText;
   Valuesettings? valueSettings;
   double gapSize = 0.2;
+  TextStyle centerTextStyle;
 
   PieChartSz(
       {super.key,
       this.values,
       this.colors,
       this.centerText = "Rezgar",
+      this.centerTextStyle = const TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        color: Colors.black,
+      ),
       this.gapSize = 0.2,
       this.valueSettings = const Valuesettings(showValues: false)});
 
@@ -37,11 +43,13 @@ class PieChartSz extends StatelessWidget {
     return CustomPaint(
       size: Size(300, 300),
       painter: SpacedDonutChartPainter(
-          colors: this.colors!,
-          values: this.values!,
-          gapSize: gapSize,
-          valueSettings: valueSettings!,
-          centerText: centerText),
+        colors: this.colors!,
+        values: this.values!,
+        gapSize: gapSize,
+        valueSettings: valueSettings!,
+        centerTextStyle: centerTextStyle,
+        centerText: centerText,
+      ),
     );
   }
 }
