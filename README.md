@@ -1,4 +1,4 @@
-# spaced Pie Chart ![Cirrus CI - Base Branch Build Status](https://img.shields.io/cirrus/github/rezgar01m/pie_chart_sz) [![GitHub stars](https://img.shields.io/github/stars/rezgar01m/pie_chart_sz.svg?style=social)](https://github.com/rezgar01m/pie_chart_sz) ![GitHub last commit](https://img.shields.io/github/last-commit/rezgar01m/pie_chart_sz.svg) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/rezgar01m/pie_chart_sz)
+# spaced Pie Chart / pie_chart_sz ![Cirrus CI - Base Branch Build Status](https://img.shields.io/cirrus/github/rezgar01m/pie_chart_sz) [![GitHub stars](https://img.shields.io/github/stars/rezgar01m/pie_chart_sz.svg?style=social)](https://github.com/rezgar01m/pie_chart_sz) ![GitHub last commit](https://img.shields.io/github/last-commit/rezgar01m/pie_chart_sz.svg) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/rezgar01m/pie_chart_sz)
 
 This Flutter package provides a donut Chart Widget
 
