@@ -5,30 +5,30 @@ import 'package:pie_chart_sz/SpacedDonutChar.dart';
 import 'package:pie_chart_sz/ValueSettings.dart';
 
 class PieChartSz extends StatelessWidget {
-  List<Color>? colors = [
-    Colors.purple,
-    Colors.blue,
-    Colors.orange,
-    Colors.red,
-    Colors.teal,
-  ];
+  final List<Color>? colors;
 
-  List<double>? values = [
-    50,
-    20,
-    20,
-    5,
-    5,
-  ];
-  String? centerText;
-  Valuesettings? valueSettings;
-  double gapSize = 0.2;
-  TextStyle centerTextStyle;
+  final List<double>? values;
+  final String? centerText;
+  final Valuesettings? valueSettings;
+  final double gapSize;
+  final TextStyle centerTextStyle;
 
   PieChartSz(
       {super.key,
-      this.values,
-      this.colors,
+      this.values = const [
+        50,
+        20,
+        20,
+        5,
+        5,
+      ],
+      this.colors = const [
+        Colors.purple,
+        Colors.blue,
+        Colors.orange,
+        Colors.red,
+        Colors.teal,
+      ],
       this.centerText = "Rezgar",
       this.centerTextStyle = const TextStyle(
         fontSize: 20,
