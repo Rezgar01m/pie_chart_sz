@@ -115,25 +115,26 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            PieChartSz(
-              colors: colors,
-              values: values,
-              gapSize: 0.2,
-              centerText: "rezgar",
-              centerTextStyle: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
-              valueSettings: Valuesettings(
-                showValues: true,
-                ValueTextStyle: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-            ),
+           SizedBox(height: 300,child:
+           PieChartSz(
+             colors: colors,
+             values: values,
+             gapSize: 0.2,
+             centerText: "rezgar",
+             centerTextStyle: TextStyle(
+               fontSize: 20,
+               fontWeight: FontWeight.bold,
+               color: Colors.black,
+             ),
+             valueSettings: Valuesettings(
+               showValues: true,
+               ValueTextStyle: TextStyle(
+                 fontSize: 14,
+                 fontWeight: FontWeight.bold,
+                 color: Colors.black,
+               ),
+             ),
+           ),),
           ],
         ),
       ),

@@ -1,10 +1,11 @@
 library pie_chart_sz;
-
+export './ValueSettings.dart';
 import 'package:flutter/material.dart';
 import 'package:pie_chart_sz/SpacedDonutChar.dart';
 import 'package:pie_chart_sz/ValueSettings.dart';
 
 class PieChartSz extends StatelessWidget {
+  // color of
   final List<Color>? colors;
 
   final List<double>? values;

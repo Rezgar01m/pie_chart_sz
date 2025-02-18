@@ -4,10 +4,15 @@ import 'dart:math';
 import 'package:pie_chart_sz/ValueSettings.dart';
 
 class SpacedDonutChartPainter extends CustomPainter {
+  // color of angles
   List<Color> colors;
+  // value of angles
   List<double> values;
+  // center text of widget
   String? centerText;
+  // center text style
   TextStyle? centerTextStyle;
+  // value
   Valuesettings valueSettings;
   double gapSize = 0.2;
 
