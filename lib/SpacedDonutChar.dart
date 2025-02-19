@@ -14,6 +14,7 @@ class SpacedDonutChartPainter extends CustomPainter {
   TextStyle? centerTextStyle;
   // value
   Valuesettings valueSettings;
+  // increase the distance between angles
   double gapSize = 0.2;
 
   SpacedDonutChartPainter({
