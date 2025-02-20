@@ -5,12 +5,14 @@ import 'package:pie_chart_sz/SpacedDonutChar.dart';
 import 'package:pie_chart_sz/ValueSettings.dart';
 
 class PieChartSz extends StatelessWidget {
-  // color of
+  // color of angles
   final List<Color>? colors;
-
+  // value of angles
   final List<double>? values;
+  // center text of widget
   final String? centerText;
   final Valuesettings? valueSettings;
+  // increase the distance between angles
   final double gapSize;
   final TextStyle centerTextStyle;
 
