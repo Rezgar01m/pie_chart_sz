@@ -1,3 +1,8 @@
+## 1.1.2
+* chor: added more doc
+* chor: spaced pie chart has been refactored
+## 1.1.1
+* update readme
 ## 1.1.0
 
 * feat: added center Text Style Settings
