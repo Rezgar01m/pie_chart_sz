@@ -3,6 +3,7 @@
 * chor: spaced pie chart has been refactored
 ## 1.1.1
 * update readme
+* format code
 ## 1.1.0
 
 * feat: added center Text Style Settings
