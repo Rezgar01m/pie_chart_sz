@@ -1,7 +1,7 @@
 library pie_chart_sz;
 export './ValueSettings.dart';
 import 'package:flutter/material.dart';
-import 'package:pie_chart_sz/SpacedDonutChar.dart';
+import 'package:pie_chart_sz/spaced_donut_char.dart';
 import 'package:pie_chart_sz/ValueSettings.dart';
 
 class PieChartSz extends StatelessWidget {
